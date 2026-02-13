@@ -24,7 +24,7 @@ npm run preview
 
 ---
 
-## Main Dashboard layout (screenshot 1)
+## Dashboard layout
 
 - **Top header bar**: Logo/name placeholder (“PM Dashboard”), nav items (Fit, Build, Launch, Files with dropdowns), workspace selector dropdown (right), icons (chat, help), user avatar dropdown.
 - **Page title**: “Welcome, {username}!” large heading.
@@ -73,7 +73,7 @@ velociti PM Dashboard/
 │   └── pages/
 │       ├── Dashboard.tsx        # Main dashboard page (layout above)
 │       └── AccountSettings.tsx  # /settings
-└── reference/                   # Screenshots (UI reference only)
+└── reference/                   # UI reference assets
 ```
 
 ---
