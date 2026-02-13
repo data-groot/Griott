@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  @apply bg-gray-50 text-gray-900 font-sans antialiased;
+}
+
+/* Focus ring for keyboard nav */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary-500;
+}
+
+/* Accordion expand/collapse */
+.accordion-grid {
+  display: grid;
+  transition: grid-template-rows 0.2s ease-out;
+}
+.accordion-grid.collapsed {
+  grid-template-rows: 0fr;
+}
+.accordion-grid.expanded {
+  grid-template-rows: 1fr;
+}
+.accordion-grid > .accordion-inner {
+  min-height: 0;
+  overflow: hidden;
+}
