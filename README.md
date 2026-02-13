@@ -1,10 +1,10 @@
-# PM Dashboard
+# Velociti PM Dashboard
 
-React + Vite + TypeScript + Tailwind CSS dashboard matching the main Dashboard layout: top header bar, welcome heading, left stat cards, Workspace Progress accordion, Feedback pill, and Getting Started floating button.
+A React + Vite + TypeScript + Tailwind CSS product management dashboard. Includes a top header bar, welcome heading, stat cards, Workspace Progress accordion (Fit / Build / Launch), Feedback pill, and Getting Started flow.
 
 ---
 
-## Exact terminal commands
+## Quick start
 
 From the project root (e.g. `velociti PM Dashboard`):
 
@@ -86,7 +86,7 @@ velociti PM Dashboard/
 - **`src/pages/Dashboard.tsx`**: Renders Header, “Welcome, {username}!”, three StatCards (Workspaces, Users, Initiatives), WorkspaceProgress card, GettingStartedButton, FeedbackTab.
 - **`src/components/WorkspaceProgress.tsx`**: “Workspace Progress” title + “Create Workspace” button; accordion of workspaces from `mockData`; expanded rows show three columns (Fit, Build, Launch) with checklist items and status icons. Accordion state persisted via `storage.ts`.
 
-All of the above files exist in the repo with full contents; open them in your editor to see the complete code.
+For a full map of the source tree and each folder, see **[src/README.md](src/README.md)** and the READMEs in `src/components`, `src/pages`, `src/contexts`, `src/lib`, and `src/data`.
 
 ---
 
@@ -95,7 +95,7 @@ All of the above files exist in the repo with full contents; open them in your e
 - **React 18** + **Vite 5** + **TypeScript**
 - **Tailwind CSS** (Inter font, primary blue palette)
 - **lucide-react** (icons)
-- **react-router-dom** (/, /settings)
+- **react-router-dom** – `/`, `/settings`, `/fit/:page`, `/build/:page`, `/launch/:page`, `/how-it-works`
 
 ---
 
